@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.PowerPlatform.Dataverse.Client;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
-using Microsoft.Xrm.Tooling.Connector;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
