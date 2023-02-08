@@ -45,7 +45,7 @@ namespace FitFlow.Controllers
         // POST: Softland/GetProducts/5
         [HttpPost]
         [Route("GetProducts/{code}")]
-        public IActionResult GetProducts([FromBody]string code)
+        public IActionResult GetProducts(string code)
         {
             var clientToken = new RestClient("http://186.67.224.61:8065/");
             var requestToken = new RestRequest("login/obtener-token", Method.Post);
@@ -79,7 +79,7 @@ namespace FitFlow.Controllers
         // POST: Softland/SendSaleOrder/1
         [HttpPost]
         [Route("SendSaleOrder/{code}")]
-        public IActionResult SendSaleOrder([FromBody]string code)
+        public IActionResult SendSaleOrder(string code)
         {
             var clientToken = new RestClient("http://186.67.224.61:8065/");
             var requestToken = new RestRequest("login/obtener-token", Method.Post);
@@ -131,7 +131,7 @@ namespace FitFlow.Controllers
         // POST: Softland/GetOrderStatus
         [HttpPost]
         [Route("GetOrderStatus/{orderNumber}")]
-        public IActionResult GetOrderStatus([FromBody]string orderNumber)
+        public IActionResult GetOrderStatus(string orderNumber)
         {
             var clientToken = new RestClient("http://186.67.224.61:8065/");
             var requestToken = new RestRequest("login/obtener-token", Method.Post);
@@ -156,7 +156,7 @@ namespace FitFlow.Controllers
         // POST: Softland/GetCreditStatus
         [HttpPost]
         [Route("GetCreditStatus/{rut}")]
-        public IActionResult GetCreditStatus([FromBody]string rut)
+        public IActionResult GetCreditStatus(string rut)
         {
             var clientToken = new RestClient("http://186.67.224.61:8065/");
             var requestToken = new RestRequest("login/obtener-token", Method.Post);
