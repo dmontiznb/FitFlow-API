@@ -1,9 +1,8 @@
 {
   "dependencies": {
-    "compute.appService1": {
-      "group": "connections",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/FitFlow20230206082540",
-      "type": "compute.appService.windows"
+    "apis1": {
+      "ignored": "true",
+      "type": "apis"
     }
   }
 }
